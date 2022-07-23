@@ -1,0 +1,9 @@
+:root {
+  --width: 100vw;
+}
+
+.WeH {
+  width: 100%;
+  height: var(--width)
+
+}
