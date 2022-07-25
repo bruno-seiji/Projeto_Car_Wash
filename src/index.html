@@ -9,17 +9,20 @@
     <title>Pires Car Wash</title>
   </head>
   <body>
-    <header class="bg-black flex justify-between h-16 py-1.5 px-4 box-border">
-      <img class="w-36" src="/img/3.png " alt="Logo Pires Car Wash" />
+    <header
+      class="float-none z-10 fixed bg-black flex justify-between w-full h-16 py-1.5 px-4 box-border"
+    >
+      <img class="w-36" src="/img/3.png " alt="Logo da Empresa" />
       <div
-        class="bg-white w-1/6 h-5/6 rounded-r-full rounded-l-full box-border p-1 justify-center flex self-center"
+        class="bg-white w-1/6 h-5/6 rounded-r-full rounded-l-full box-border p-1 justify-center flex self-center cursor-pointer"
       >
         <img class="h-auto w-1/2" src="/img/menu-aberto.png" alt="icone menu" />
+        <img class="h-auto w-1/2 hidden" src="/img/x.png" alt="icone fechar" />
       </div>
     </header>
     <section
       id="Intro"
-      class="bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH"
+      class="top-16 bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH"
     >
       <h1
         class="w-56 text-4xl self-center text-white font-bold text-center leading-tight tracking-widest mt-24 uppercase"
@@ -37,7 +40,10 @@
         convenient way.
       </p>
     </section>
-    <section id="Services" class="grid grid-rows-5 gap-y-5">
+    <section
+      id="Services"
+      class="grid grid-rows-5 gap-y-5 pb-8 bg-gradient-to-b from-white to-gray-400"
+    >
       <h3
         class="w-full h-30 text-4xl text-center tracking-widest leading-none box-border pt-10 pb-5"
       >
@@ -81,16 +87,14 @@
         </p>
       </div>
     </section>
-    <footer>
-      <img src="" alt="" />
-      <h4></h4>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <h5></h5>
-      <p></p>
-      © 2023 for Pires Mobile Detailing.
-    </footer>
+    <foote class="bg-black text-white grid box-border p-5 text-center">
+      <img src="/img/3.png" alt="Logo da Empresa" />
+      <h4 class="w-fit h-fit text-2xl font-bold">Contact</h4>
+      <p class="text-sm ml-2 w-fit h-fit">Name</p>
+      <p class="text-sm ml-8 w-fit h-fit">Phone</p>
+      <h5 class="w-fit h-fit text-2xl font-bold mt-7">Work Schedule</h5>
+      <p class="ml-2 mb-5 text-sm w-fit h-fit">Day / Hours</p>
+      © 2022 for Bscc
+    </foote>
   </body>
 </html>
