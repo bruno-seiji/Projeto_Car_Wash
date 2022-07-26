@@ -11,3 +11,7 @@
 #Services {
   grid-template-rows: repeat(5,auto);
 }
+
+#menu ul li {
+  text-align: center;
+}

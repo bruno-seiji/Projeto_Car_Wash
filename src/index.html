@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="/dist/output_2.css" />
     <link rel="stylesheet" href="/dist/output.css" />
     <script src="/src/script.js" defer></script>
-    <title>Pires Car Wash</title>
+    <title>Project Car Detailing</title>
   </head>
   <body>
     <header
-      class="bg-black flex justify-between w-full h-16 py-1.5 px-4 box-border"
+      id="Header"
+      class="bg-black flex justify-between w-full h-16 py-1.5 px-4 box-border fixed z-10 top-0"
     >
-      <img class="w-36" src="/img/3.png " alt="Logo da Empresa" />
+      <img id="logo" class="w-36" src="/img/3.png " alt="Logo da Empresa" />
       <div
-        class="bg-white w-1/6 h-5/6 rounded-r-full rounded-l-full box-border p-1 justify-center flex self-center cursor-pointer"
+        class="bg-white w-1/6 h-5/6 rounded-r-full rounded-l-full box-border p-1 justify-center flex self-center cursor-pointer border-solid border-2 border-black"
       >
         <img
           id="menu_icon"
@@ -33,17 +34,22 @@
         />
       </div>
     </header>
-    <section id="menu" class="bg-white w-full h-screen relative">
-      <ul class="grid grid-rows-4">
-        <li>Main</li>
-        <li>About us</li>
-        <li>Services</li>
-        <li>Contact us</li>
+    <section
+      id="menu"
+      class="bg-white w-full h-fit relative pt-28 box-border hidden mt-16"
+    >
+      <ul
+        class="grid grid-rows-4 justify-center gap-y-16 text-lg tracking-widest"
+      >
+        <li><a href="#Header" onclick="select_close()">Main</a></li>
+        <li><a href="#About" onclick="select_close()">About us</a></li>
+        <li><a href="#Services" onclick="select_close()">Services</a></li>
+        <li><a href="#footer" onclick="select_close()">Contact us</a></li>
       </ul>
     </section>
     <section
       id="Intro"
-      class="relative bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH"
+      class="relative mt-16 bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH scroll-mt-16"
     >
       <h1
         class="w-56 text-4xl self-center text-white font-bold text-center leading-tight tracking-widest mt-24 uppercase"
@@ -53,17 +59,16 @@
     </section>
     <section
       id="About"
-      class="py-5 bg-gradient-to-b from-black to-gray-400 w-full h-40 text-center text-white box-border"
+      class="py-5 bg-gradient-to-b from-black to-gray-400 w-full text-center text-white box-border scroll-mt-16"
     >
       <h2 class="text-5xl font-bold">About us</h2>
-      <p class="w-72 mx-auto">
-        Car cleaning services. Serving our customers at home in an efficient and
-        convenient way.
+      <p class="w-72 mx-auto mt-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       </p>
     </section>
     <section
       id="Services"
-      class="grid grid-rows-5 gap-y-5 pb-8 bg-gradient-to-b from-white to-gray-400"
+      class="grid grid-rows-5 gap-y-5 pb-8 bg-gradient-to-b from-white to-gray-400 scroll-mt-16"
     >
       <h3
         class="w-full h-30 text-4xl text-center tracking-widest leading-none box-border pt-10 pb-5"
@@ -108,7 +113,10 @@
         </p>
       </div>
     </section>
-    <foote class="bg-black text-white grid box-border p-5 text-center">
+    <foote
+      id="footer"
+      class="bg-black text-white grid box-border p-5 text-center"
+    >
       <img src="/img/3.png" alt="Logo da Empresa" />
       <h4 class="w-fit h-fit text-2xl font-bold">Contact</h4>
       <p class="text-sm ml-2 w-fit h-fit">Name</p>
