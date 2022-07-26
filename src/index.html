@@ -6,23 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output_2.css" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <script src="/src/script.js" defer></script>
     <title>Pires Car Wash</title>
   </head>
   <body>
     <header
-      class="float-none z-10 fixed bg-black flex justify-between w-full h-16 py-1.5 px-4 box-border"
+      class="bg-black flex justify-between w-full h-16 py-1.5 px-4 box-border"
     >
       <img class="w-36" src="/img/3.png " alt="Logo da Empresa" />
       <div
         class="bg-white w-1/6 h-5/6 rounded-r-full rounded-l-full box-border p-1 justify-center flex self-center cursor-pointer"
       >
-        <img class="h-auto w-1/2" src="/img/menu-aberto.png" alt="icone menu" />
-        <img class="h-auto w-1/2 hidden" src="/img/x.png" alt="icone fechar" />
+        <img
+          id="menu_icon"
+          onclick="select_menu()"
+          class="h-auto w-1/2"
+          src="/img/menu-aberto.png"
+          alt="icone menu"
+        />
+        <img
+          id="close_icon"
+          onclick="select_close()"
+          class="h-3/5 w-1/2 hidden self-center"
+          src="/img/x.png"
+          alt="icone fechar"
+        />
       </div>
     </header>
+    <section id="menu" class="bg-white w-full h-screen relative">
+      <ul class="grid grid-rows-4">
+        <li>Main</li>
+        <li>About us</li>
+        <li>Services</li>
+        <li>Contact us</li>
+      </ul>
+    </section>
     <section
       id="Intro"
-      class="top-16 bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH"
+      class="relative bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH"
     >
       <h1
         class="w-56 text-4xl self-center text-white font-bold text-center leading-tight tracking-widest mt-24 uppercase"
