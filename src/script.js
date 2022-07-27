@@ -8,9 +8,24 @@ var footer = document.querySelector('foote')
 var menu = document.querySelector('#menu')
 var header = document.querySelector('header')
 var logo_header = document.querySelector('#logo')
+var html = document.querySelector('html')
+var button_start = document.querySelector('#button_to_start')
 var i = 0
 
+window.addEventListener('scroll', () => {
+  if (window.scrollY <= 64) {
+    button_start.classList.remove('flex')
+    button_start.classList.remove('fixed')
+    button_start.classList.add('hidden')
+  } else {
+    button_start.classList.remove('hidden')
+    button_start.classList.add('fixed')
+    button_start.classList.add('flex')
+  }
+})
+
 function select_menu() {
+  html.classList.add('overflow-hidden')
   button_menu.classList.remove('block')
   button_menu.classList.add('hidden')
   button_close.classList.remove('hidden')
@@ -26,6 +41,7 @@ function select_menu() {
 }
 
 function select_close() {
+  html.classList.remove('overflow-hidden')
   button_menu.classList.remove('hidden')
   button_menu.classList.add('block')
   button_close.classList.remove('block')
@@ -58,7 +74,6 @@ function show_all() {
   footer.classList.add('block')
 }
 
-function scroll_to(way) {
-  select_close()
-  way.scrollIntoView()
+function scroll_to_start() {
+  window.scrollTo({ top: 0 })
 }

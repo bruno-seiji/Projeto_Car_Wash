@@ -12,7 +12,7 @@
   <body>
     <header
       id="Header"
-      class="bg-black flex justify-between w-full h-16 py-1.5 px-4 box-border fixed z-10 top-0"
+      class="bg-black flex justify-between w-full h-16 py-1.5 px-4 box-border z-10 top-0"
     >
       <img id="logo" class="w-36" src="/img/3.png " alt="Logo da Empresa" />
       <div
@@ -34,22 +34,29 @@
         />
       </div>
     </header>
+    <button
+      id="button_to_start"
+      class="flex fixed z-10 bg-white rounded-full w-16 h-16 m-auto right-5 bottom-10 border-solid border-2 border-black justify-center items-center"
+      onclick="scroll_to_start()"
+    >
+      <img class="w-3/4" src="/img/pra-cima.png" alt="Button back to top" />
+    </button>
     <section
       id="menu"
-      class="bg-white w-full h-fit relative pt-28 box-border hidden mt-16"
+      class="bg-white w-full h-screen absolute pt-28 box-border hidden z-10"
     >
       <ul
         class="grid grid-rows-4 justify-center gap-y-16 text-lg tracking-widest"
       >
-        <li onclick="scroll_to(Intro)">Main</li>
-        <li onclick="scroll_to(About)">About us</li>
-        <li onclick="scroll_to(Services)">Services</li>
-        <li onclick="scroll_to(footer)">Contact us</li>
+        <li><a href="#Intro" onclick="select_close()">Main</a></li>
+        <li><a href="#About" onclick="select_close()">About us</a></li>
+        <li><a href="#Services" onclick="select_close()">Services</a></li>
+        <li><a href="#footer" onclick="select_close()">Contact us</a></li>
       </ul>
     </section>
     <section
       id="Intro"
-      class="relative mt-16 bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH scroll-mt-16"
+      class="relative bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH scroll-mt-16"
     >
       <h1
         class="w-56 text-4xl self-center text-white font-bold text-center leading-tight tracking-widest mt-24 uppercase"
@@ -59,7 +66,7 @@
     </section>
     <section
       id="About"
-      class="py-5 bg-gradient-to-b from-black to-gray-400 w-full text-center text-white box-border scroll-mt-16"
+      class="py-5 bg-gradient-to-b from-black to-gray-400 w-full text-center text-white box-border"
     >
       <h2 class="text-5xl font-bold">About us</h2>
       <p class="w-72 mx-auto mt-2">
@@ -68,7 +75,7 @@
     </section>
     <section
       id="Services"
-      class="grid grid-rows-5 gap-y-5 pb-8 bg-gradient-to-b from-white to-gray-400 scroll-mt-16"
+      class="grid grid-rows-5 gap-y-5 pb-8 bg-gradient-to-b from-white to-gray-400"
     >
       <h3
         class="w-full h-30 text-4xl text-center tracking-widest leading-none box-border pt-10 pb-5"
