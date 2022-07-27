@@ -9,34 +9,52 @@
     <script src="/src/script.js" defer></script>
     <title>Project Car Detailing</title>
   </head>
-  <body>
-    <header
-      id="Header"
-      class="bg-black flex justify-between w-full h-16 py-1.5 px-4 box-border z-10 top-0"
-    >
-      <img id="logo" class="w-36" src="/img/3.png " alt="Logo da Empresa" />
+  <body class="xl:grid xl:bg-black">
+    <header class="w-full h-16 xl:grid xl:bg-black xl:fixed xl:z-10">
       <div
-        class="bg-white w-1/6 h-5/6 rounded-r-full rounded-l-full box-border p-1 justify-center flex self-center cursor-pointer border-solid border-2 border-black"
+        id="Header"
+        class="bg-black flex justify-between py-1.5 px-4 box-border w-full h-full md:px-10 xl:w-[1280px] xl:justify-self-center"
       >
         <img
-          id="menu_icon"
-          onclick="select_menu()"
-          class="h-auto w-1/2"
-          src="/img/menu-aberto.png"
-          alt="icone menu"
+          id="logo"
+          class="w-36 h-auto"
+          src="/img/3.png "
+          alt="Logo da Empresa"
         />
-        <img
-          id="close_icon"
-          onclick="select_close()"
-          class="h-3/5 w-1/2 hidden self-center"
-          src="/img/x.png"
-          alt="icone fechar"
-        />
+        <div
+          class="bg-white w-1/6 h-5/6 rounded-r-full rounded-l-full box-border p-1 justify-center flex self-center cursor-pointer border-solid border-2 border-black md:w-16 xl:hidden"
+        >
+          <img
+            id="menu_icon"
+            onclick="select_menu()"
+            class="h-auto w-1/2"
+            src="/img/menu-aberto.png"
+            alt="icone menu"
+          />
+          <img
+            id="close_icon"
+            onclick="select_close()"
+            class="h-3/5 w-1/2 hidden self-center"
+            src="/img/x.png"
+            alt="icone fechar"
+          />
+        </div>
+
+        <div id="menu_header" class="hidden xl:flex">
+          <ul
+            class="flex text-lg tracking-widest text-white gap-x-16 self-center"
+          >
+            <li><a href="#Intro">Main</a></li>
+            <li><a href="#About">About us</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#footer">Contact us</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <button
       id="button_to_start"
-      class="flex fixed z-10 bg-white rounded-full w-16 h-16 m-auto right-5 bottom-10 border-solid border-2 border-black justify-center items-center"
+      class="flex fixed z-10 bg-white rounded-full w-16 h-16 m-auto right-5 bottom-10 border-solid border-2 border-black justify-center items-center xl:hidden"
       onclick="scroll_to_start()"
     >
       <img class="w-3/4" src="/img/pra-cima.png" alt="Button back to top" />
@@ -56,22 +74,26 @@
     </section>
     <section
       id="Intro"
-      class="relative bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH scroll-mt-16"
+      class="relative bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH scroll-mt-16 md:h-96 xl:h-[780px] xl:mt-16"
     >
       <h1
-        class="w-56 text-4xl self-center text-white font-bold text-center leading-tight tracking-widest mt-24 uppercase"
+        class="w-56 text-4xl self-center text-white font-bold text-center leading-tight tracking-widest mt-24 uppercase xl:text-6xl xl:w-[900px] xl:px-3 xl:m-0"
       >
         Making your car shining
       </h1>
     </section>
     <section
       id="About"
-      class="py-5 bg-gradient-to-b from-black to-gray-400 w-full text-center text-white box-border"
+      class="py-5 bg-gradient-to-b from-black to-gray-400 w-full text-center text-white box-border flex justify-center xl:p-0 xl:m-0"
     >
-      <h2 class="text-5xl font-bold">About us</h2>
-      <p class="w-72 mx-auto mt-2">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      </p>
+      <div class="xl:w-1/2 self-center">
+        <h2 class="text-5xl font-bold xl:text-7xl">About us</h2>
+        <p class="w-72 mx-auto mt-2 xl:text-2xl xl:w-2/3 xl:mt-5">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+      </div>
+
+      <img class="hidden xl:block w-1/2 h-[640px]" src="/img/pic5.jpg" alt="" />
     </section>
     <section
       id="Services"
@@ -124,7 +146,7 @@
       id="footer"
       class="bg-black text-white grid box-border p-5 text-center"
     >
-      <img src="/img/3.png" alt="Logo da Empresa" />
+      <img class="justify-self-center" src="/img/3.png" alt="Logo da Empresa" />
       <h4 class="w-fit h-fit text-2xl font-bold">Contact</h4>
       <p class="text-sm ml-2 w-fit h-fit">Name</p>
       <p class="text-sm ml-8 w-fit h-fit">Phone</p>

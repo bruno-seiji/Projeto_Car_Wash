@@ -15,3 +15,14 @@
 #menu ul li {
   text-align: center;
 }
+
+#menu_header ul li :hover {
+  opacity: 0.6;
+  
+}
+
+
+ #Intro h1 {
+  -webkit-text-stroke: 1px black;
+ }
+  
