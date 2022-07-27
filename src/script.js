@@ -1,6 +1,9 @@
 var button_menu = document.querySelector('#menu_icon')
 var button_close = document.querySelector('#close_icon')
 var all_sections = document.querySelectorAll('section')
+var Intro = document.querySelector('#Intro')
+var Services = document.querySelector('#Services')
+var About = document.querySelector('#About')
 var footer = document.querySelector('foote')
 var menu = document.querySelector('#menu')
 var header = document.querySelector('header')
@@ -53,4 +56,9 @@ function show_all() {
   }
   footer.classList.remove('hidden')
   footer.classList.add('block')
+}
+
+function scroll_to(way) {
+  select_close()
+  way.scrollIntoView()
 }
