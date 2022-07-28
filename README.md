@@ -2,14 +2,14 @@
 
 ## Obejtivo 
   Projeto desenvolvido com intuito de praticar conhecimentos adiquiridos 
-  em curso de TailwindCSS
+  em curso de TailwindCSS.
   
   ----
 
 ## Projeto
   Foi desenvolvido uma pagina de prestação de serviço de lavagem de carro.
   No projeto foi aplicado:
-  * Conecimentos no Framework Css (TailwindCss),
+  * Conecimentos no Framework TailwindCss (Framework que utiliza do conceito de classes utilitárias)
   * Coceito de mobile-first,
   * Responsividade para telas de smartfones e computadores,
   * Incremento e decremento de classes via JavaScript.
