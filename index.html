@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output_2.css" />
-    <link rel="stylesheet" href="/dist/output.css" />
     <script src="/src/script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Project Car Detailing</title>
   </head>
   <body class="xl:grid xl:bg-black">
@@ -31,6 +31,7 @@
             src="/img/menu-aberto.png"
             alt="icone menu"
           />
+
           <img
             id="close_icon"
             onclick="select_close()"
@@ -74,7 +75,7 @@
     </section>
     <section
       id="Intro"
-      class="relative bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH scroll-mt-16 md:h-96 xl:h-[780px] xl:mt-16"
+      class="relative bg-[url('/img/carros.jpg')] bg-center bg-cover flex justify-center WeH xl:scroll-mt-16 md:h-96 xl:h-[780px] xl:mt-16"
     >
       <h1
         class="w-56 text-4xl self-center text-white font-bold text-center leading-tight tracking-widest mt-24 uppercase xl:text-6xl xl:w-[900px] xl:px-3 xl:m-0"
@@ -84,7 +85,7 @@
     </section>
     <section
       id="About"
-      class="py-5 bg-gradient-to-b from-black to-gray-400 w-full text-center text-white scroll-mt-16 box-border flex justify-center xl:p-0 xl:m-0"
+      class="py-5 bg-gradient-to-b from-black to-gray-400 w-full text-center text-white xl:scroll-mt-16 box-border flex justify-center xl:p-0 xl:m-0"
     >
       <div class="xl:w-1/2 self-center">
         <h2 class="text-5xl font-bold xl:text-7xl">About us</h2>
@@ -97,7 +98,7 @@
     </section>
     <section
       id="Services"
-      class="grid grid-rows-5 gap-y-5 pb-8 bg-gradient-to-b from-white to-gray-400 xl:grid-rows-3 xl:grid-cols-2 xl:gap-7 scroll-mt-16"
+      class="grid grid-rows-5 gap-y-5 pb-8 bg-gradient-to-b from-white to-gray-400 xl:grid-rows-3 xl:grid-cols-2 xl:gap-7 xl:scroll-mt-16"
     >
       <h3
         class="w-full h-30 text-4xl text-center tracking-widest leading-none box-border pt-10 pb-5 xl:col-span-2 xl:text-6xl"
@@ -142,21 +143,24 @@
         </p>
       </div>
     </section>
-    <foote class="flex justify-center scroll-mt-16 xl:h-auto box-border">
+    <foote class="flex justify-center xl:scroll-mt-16 xl:h-auto xl:box-border">
       <div
         id="footer"
-        class="bg-black text-white w-full h-full grid box-border p-5 text-center xl:w-[1280px] xl:gri-rows-2 xl:grid-cols-3"
+        class="bg-black text-white w-full h-full block box-border p-5 text-center xl:w-[1280px] xl:grid xl:gri-rows-2 xl:grid-cols-3"
       >
         <img class="justify-self-center" src="/img/3.png" alt="Logo" />
-        <div class="ml-5">
+
+        <div class="xl:ml-5">
           <h4 class="w-fit h-fit text-2xl font-bold">Contact</h4>
           <p class="text-sm ml-2 w-fit h-fit">Name</p>
           <p class="text-sm ml-8 w-fit h-fit">Phone</p>
         </div>
+
         <div class="mt-7 mb-5 xl:m-0">
           <h5 class="w-fit h-fit text-2xl font-bold">Work Schedule</h5>
           <p class="ml-2 text-sm w-fit h-fit">Day / Hours</p>
         </div>
+
         <div class="col-span-3 w-full h-fit">© 2022 for Bscc</div>
       </div>
     </foote>
