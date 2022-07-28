@@ -1046,6 +1046,14 @@ video {
     z-index: 10;
   }
 
+  .xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .xl\:m-0 {
     margin: 0px;
   }
@@ -1082,6 +1090,10 @@ video {
     height: 780px;
   }
 
+  .xl\:h-\[400px\] {
+    height: 400px;
+  }
+
   .xl\:w-\[\] {
     width: ;
   }
@@ -1114,8 +1126,40 @@ video {
     width: 66.666667%;
   }
 
+  .xl\:w-\[1280\] {
+    width: 1280;
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
   .xl\:justify-center {
     justify-content: center;
+  }
+
+  .xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .xl\:gap-7 {
+    gap: 1.75rem;
   }
 
   .xl\:justify-self-center {
@@ -1149,5 +1193,10 @@ video {
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
